@@ -55,6 +55,9 @@ function init() {
   transport.addIsPlayingObserver(checkTransportPlaying());
   transport.addIsRecordingObserver(checkBoolean(null, mapping.nav.rec, null));
 
+  scenes.addCanScrollDownObserver(checkBoolean(null, mapping.nav.right, null));
+  scenes.addCanScrollUpObserver(checkBoolean(null, mapping.nav.left, null));
+
   // Track bank observers. All clips are at the intersection of the current scene index.
   for (var i = 0; i < 8; i++) {
     // Check if track's clip is playing.
