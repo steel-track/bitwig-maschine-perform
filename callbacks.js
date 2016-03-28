@@ -82,8 +82,10 @@ function checkPosition() {
         leds.setSingle(mapping.trackRecord.min + i, state);
       }
       // Blink tap tempo button.
-      state = (subDivision < 3) ? 'on' : 'off';
-      leds.setSingle(mapping.tapTempo, state);
+      if (!m.stopped) {
+        state = (subDivision < 3) ? 'on' : 'off';
+        leds.setSingle(mapping.tapTempo, state);
+      }
     }
   }
 }
