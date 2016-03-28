@@ -22,11 +22,14 @@ mapping.nav.erase = 51;
 mapping.nav.start = 54;
 mapping.nav.rec = 55;
 mapping.nav.restart = 56;
+mapping.nav.setClipLength = 57;
 mapping.nav.prevProject = 76;
 mapping.nav.nextProject = 77;
 mapping.secondary = {};
 mapping.secondary.min = 68;
 mapping.secondary.max = 75;
+mapping.secondary.pageUp = 81;
+mapping.secondary.pageDown = 82;
 mapping.knobs = {};
 mapping.knobs.main = [];
 mapping.knobs.main[0] = 16;
@@ -37,6 +40,13 @@ mapping.knobs.main[4] = 20;
 mapping.knobs.main[5] = 21;
 mapping.knobs.main[6] = 22;
 mapping.knobs.main[7] = 23;
+mapping.knobs.master = 24;
+mapping.knobs.tempo = 25;
+mapping.knobs.swing = 26;
+mapping.modes = {};
+mapping.modes.track = 78;
+mapping.modes.macro = 79;
+mapping.tapTempo = 80;
 
 /**
  * VPots send data based on acceleration, so convert to linear CC.
@@ -52,4 +62,8 @@ mapping.convertVPot = function(value) {
     converted = -(value - 64);
   }
   return converted;
+};
+
+mapping.convertRelative = function(value) {
+  return value - 64;
 };

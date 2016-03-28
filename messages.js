@@ -38,6 +38,11 @@ messages.writeMessage = function(text, position) {
   sendSysex(this.start + position + messages.toHex(text) + messages.end);
 };
 
+messages.writeSingle = function(text, position) {
+  var message = (text == '' || text == 'none') ? '______' : text;
+  this.writeMessage(messages.fixLength(message, 7), position);
+};
+
 /**
  * Fix the length of the message to a desired value.
  */
@@ -73,7 +78,7 @@ messages.toHex = function(string) {
 };
 
 /**
- * Update the vpot with the amount.
+ * Update the linear vpot with the amount.
  */
 messages.sendVpotLinear = function(index, value) {
   // vpot display for linear starts at 48.

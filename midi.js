@@ -2,9 +2,9 @@
  * React to all midi input.
  */
 function onMidi(status, data1, data2) {
-  //println('status: ' + status);
-  //println('data1: ' + data1);
-  //println('data2: ' + data2);
+  println('status: ' + status);
+  println('data1: ' + data1);
+  println('data2: ' + data2);
 
   // Use note data.
   if (status == status_id_notes) {
@@ -23,9 +23,21 @@ function onMidi(status, data1, data2) {
       transport.record();
     }
 
+    // Tap tempo.
+    if (data1 == mapping.tapTempo) {
+      transport.tapTempo();
+    }
+
     // Move transport back to beginning.
     if (data1 == mapping.nav.restart) {
       transport.setPosition(0);
+    }
+
+    // Set recording length to 8 bars.
+    if (data1 == mapping.nav.setClipLength) {
+      m.setClipLength = (m.setClipLength) ? false : true;
+      var state = (m.setClipLength) ? 'on' : 'off';
+      leds.setSingle(mapping.nav.setClipLength, state);
     }
 
     // Page scene bank up.
@@ -40,7 +52,7 @@ function onMidi(status, data1, data2) {
 
     // Erase a clip.
     if (data1 == mapping.nav.erase) {
-      tracks.getChannel(m.trackIndex).getClipLauncherSlots().deleteClip(m.sceneIndex);
+      tracks.getChannel(m.trackArmedIndex).getClipLauncherSlots().deleteClip(m.sceneIndex);
     }
 
     // Switch and enable projects.
@@ -66,19 +78,20 @@ function onMidi(status, data1, data2) {
 
     // Check if note falls within track arm range.
     if (data1 >= mapping.trackArm.min && data1 <= mapping.trackArm.max) {
-      m.trackIndex = data1 - mapping.trackArm.min;
+      m.trackArmedIndex = data1 - mapping.trackArm.min;
       // If you want multiple tracks enabled at a time, this will do it, but for now let's have one.
       for (var i = 0; i < 8; i++) {
         tracks.getChannel(i).getArm().set(false);
       }
-      tracks.getChannel(m.trackIndex).getArm().set(true);
+      tracks.getChannel(m.trackArmedIndex).getArm().set(true);
     }
 
     // Check if note falls within track record range.
     if (data1 >= mapping.trackRecord.min && data1 <= mapping.trackRecord.max) {
       // Trigger a clip to begin recording given the current scene.
-      m.trackIndex = data1 - mapping.trackRecord.min;
+      m.trackArmedIndex = data1 - mapping.trackRecord.min;
 
+      // Iterate over current tracks, stop recording if recording, and disable arm.
       for (var i = 0; i < 8; i++) {
         if (m.trackRecording[i]) {
           m.trackRecording[i] = false;
@@ -86,24 +99,73 @@ function onMidi(status, data1, data2) {
         }
         tracks.getChannel(i).getArm().set(false);
       }
-      tracks.getChannel(m.trackIndex).getArm().set(true);
-      tracks.getChannel(m.trackIndex).getClipLauncherSlots().launch(m.sceneIndex);
+      // Arm new track.
+      tracks.getChannel(m.trackArmedIndex).getArm().set(true);
+      // If set clip length is enabled, create a new set length clip then record. Otherwise,
+      // just create clip and record.
+      if (m.setClipLength) {
+        transport.setLauncherOverdub(false);
+        tracks.getChannel(m.trackArmedIndex).getClipLauncherSlots().createEmptyClip(m.sceneIndex, 32);
+      }
+      else {
+        transport.setLauncherOverdub(true);
+      }
+      tracks.getChannel(m.trackArmedIndex).getClipLauncherSlots().launch(m.sceneIndex);
     }
 
     // Check if note falls within secondary range.
     if (data1 >= mapping.secondary.min && data1 <= mapping.secondary.max) {
-      var newTrack = data1 - mapping.secondary.min;
-      tracks.getChannel(newTrack).selectInMixer();
+      m.trackSelectedIndex = data1 - mapping.secondary.min;
+      tracks.getChannel(m.trackSelectedIndex).selectInMixer();
+    }
+
+    // Page tracks up and down.
+    if (data1 == mapping.secondary.pageDown) {
+      tracks.scrollChannelsPageDown();
+    }
+
+    if (data1 == mapping.secondary.pageUp) {
+      tracks.scrollChannelsPageUp();
+    }
+  }
+
+  // Set track mode.
+  if (data1 == mapping.modes.track) {
+    leds.setSingle(m.mode, 'off');
+    m.mode = mapping.modes.track;
+    leds.setSingle(m.mode, 'on');
+    // Initialize all labels and values.
+    for (var i = 0; i < 8; i++) {
+      messages.writeSingle(m.trackName[i], messages.position.bottom[i]);
+      messages.sendVpotLinear(i, m.trackValue[i]);
+    }
+  }
+
+  // Set macro mode.
+  if (data1 == mapping.modes.macro) {
+    leds.setSingle(m.mode, 'off');
+    m.mode = mapping.modes.macro;
+    leds.setSingle(m.mode, 'on');
+    // Initialize all labels and values.
+    for (var i = 0; i < 8; i++) {
+      messages.writeSingle(m.macroName[i], messages.position.bottom[i]);
+      messages.sendVpotLinear(i, m.macroValue[i]);
     }
   }
 
   // Use cc data.
   if (status == status_id_cc) {
-    // Check if our main knob bank was used.
-    var main_knob = mapping.knobs.main.indexOf(data1);
-    if (main_knob > -1) {
-      // Change value of macro based on knob index.
-      cDevice.getMacro(main_knob).getAmount().inc(mapping.convertVPot(data2), 128);
+    if (data1 == mapping.knobs.master) {
+      masterTrack.getVolume().inc(mapping.convertRelative(data2), 128);
+    }
+    else if (data1 == mapping.knobs.tempo) {
+      transport.getTempo().inc(mapping.convertRelative(data2), 647);
+    }
+    else if (data1 == mapping.knobs.swing) {
+      groove.getShuffleAmount().inc(mapping.convertRelative(data2), 101);
+    }
+    else {
+      encoderModes(data1, data2);
     }
   }
 }
