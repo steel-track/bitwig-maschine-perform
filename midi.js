@@ -2,9 +2,9 @@
  * React to all midi input.
  */
 function onMidi(status, data1, data2) {
-  println('status: ' + status);
-  println('data1: ' + data1);
-  println('data2: ' + data2);
+  // println('status: ' + status);
+  // println('data1: ' + data1);
+  // println('data2: ' + data2);
 
   // Use note data.
   if (status == status_id_notes) {
@@ -40,6 +40,13 @@ function onMidi(status, data1, data2) {
       leds.setSingle(mapping.nav.setClipLength, state);
     }
 
+    // Set recording clip length
+    if (mapping.clipLength.min <= data1 && mapping.clipLength.max >= data1) {
+      m.clipLength = mapping.clipLength.values[data1];
+      leds.setGroup(mapping.clipLength.min, mapping.clipLength.max, 'off');
+      leds.setSingle(mapping.clipLength.triggers[m.clipLength], 'on');
+    }
+    
     // Page scene bank up.
     if (data1 == mapping.nav.left) {
       scenes.scrollPageUp();
@@ -105,7 +112,7 @@ function onMidi(status, data1, data2) {
       // just create clip and record.
       if (m.setClipLength) {
         transport.setLauncherOverdub(false);
-        tracks.getChannel(m.trackArmedIndex).getClipLauncherSlots().createEmptyClip(m.sceneIndex, 32);
+        tracks.getChannel(m.trackArmedIndex).getClipLauncherSlots().createEmptyClip(m.sceneIndex, m.clipLength);
       }
       else {
         transport.setLauncherOverdub(true);

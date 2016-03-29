@@ -48,6 +48,7 @@ function init() {
   m.trackSelectedIndex = 0;
   m.sceneIndex = 0;
   m.stopped = true;
+  m.clipLength = 16;
   m.setClipLength = true;
   m.trackLabels = [];
   m.macroName = [];
@@ -112,6 +113,7 @@ function init() {
   leds.setSingle(m.mode, 'on');
   var state = (m.setClipLength) ? 'on' : 'off';
   leds.setSingle(mapping.nav.setClipLength, state);
+  leds.setSingle(mapping.clipLength.triggers[m.clipLength], state);
 
   // Initialize all labels and values for track mode.
   for (var i = 0; i < 8; i++) {

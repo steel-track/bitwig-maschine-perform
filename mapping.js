@@ -47,6 +47,19 @@ mapping.modes = {};
 mapping.modes.track = 78;
 mapping.modes.macro = 79;
 mapping.tapTempo = 80;
+mapping.clipLength = {};
+mapping.clipLength.min = 84;
+mapping.clipLength.max = 87;
+mapping.clipLength.triggers = [];
+mapping.clipLength.triggers[8] = 84;
+mapping.clipLength.triggers[16] = 85;
+mapping.clipLength.triggers[32] = 86;
+mapping.clipLength.triggers[64] = 87;
+mapping.clipLength.values = [];
+mapping.clipLength.values[84] = 8;
+mapping.clipLength.values[85] = 16;
+mapping.clipLength.values[86] = 32;
+mapping.clipLength.values[87] = 64;
 
 /**
  * VPots send data based on acceleration, so convert to linear CC.
