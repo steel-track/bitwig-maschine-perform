@@ -49,12 +49,27 @@ function onMidi(status, data1, data2) {
     
     // Page scene bank up.
     if (data1 == mapping.nav.left) {
-      scenes.scrollPageUp();
+      if (m.scenePage > 0) {
+        m.scenePage--;
+      }
+      tracks.scrollScenesPageUp();
     }
 
     // Page scene bank down.
     if (data1 == mapping.nav.right) {
-      scenes.scrollPageDown();
+      if (!m.sceneCanScroll) {
+        m.scenePage++;
+      }
+      tracks.scrollScenesPageDown();
+    }
+
+    // Launch scenes if group is hit.
+    if (data1 >= mapping.group.min && data1 <= mapping.group.max) {
+      // Set the scene index based on the value.
+      m.sceneBankIndex = data1 - mapping.group.min;
+      leds.setGroup(mapping.group.min, mapping.group.max, 'off');
+      leds.setSingle(data1);
+      tracks.launchScene(m.sceneBankIndex);
     }
 
     // Erase a clip.
@@ -71,16 +86,6 @@ function onMidi(status, data1, data2) {
     if (data1 == mapping.nav.prevProject && m.stopped) {
       application.previousProject();
       application.activateEngine();
-    }
-
-    // Check if the note falls into our Group mapping range.
-    if (data1 >= mapping.group.min && data1 <= mapping.group.max) {
-      // Set the scene index based on the value.
-      m.sceneIndex = data1 - mapping.group.min;
-      leds.setGroup(mapping.group.min, mapping.group.max, 'off');
-      leds.setSingle(data1);
-      scenes.getScene(m.sceneIndex).selectInEditor();
-      scenes.launchScene(m.sceneIndex);
     }
 
     // Check if note falls within track arm range.

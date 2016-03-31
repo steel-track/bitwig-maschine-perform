@@ -37,7 +37,7 @@ function init() {
   application = host.createApplication();
   transport = host.createTransport();
   tracks = host.createTrackBank(8, 4, 8);
-  scenes = host.createSceneBank(8);
+  //scenes = host.createSceneBank(8);
   cTrack = host.createCursorTrack(4, 8);
   cDevice = cTrack.getPrimaryDevice();
   masterTrack = host.createMasterTrack(8);
@@ -47,6 +47,9 @@ function init() {
   m.trackArmedIndex = 0;
   m.trackSelectedIndex = 0;
   m.sceneIndex = 0;
+  m.sceneBankIndex = 0;
+  m.scenePage = 0;
+  m.sceneCanScroll= false;
   m.stopped = true;
   m.clipLength = 16;
   m.setClipLength = true;
@@ -72,8 +75,8 @@ function init() {
   transport.addIsPlayingObserver(checkTransportPlaying());
   transport.addIsRecordingObserver(checkBoolean(null, mapping.nav.rec, null));
 
-  scenes.addCanScrollDownObserver(checkBoolean(null, mapping.nav.right, null));
-  scenes.addCanScrollUpObserver(checkBoolean(null, mapping.nav.left, null));
+  tracks.addCanScrollScenesDownObserver(checkBoolean(null, mapping.nav.right, null));
+  tracks.addCanScrollScenesUpObserver(checkBoolean(null, mapping.nav.left, null));
 
   // Track bank observers. All clips are at the intersection of the current scene index.
   for (var i = 0; i < 8; i++) {
@@ -96,7 +99,7 @@ function init() {
   }
 
   // Check if tracks can be paginated.
-  tracks.addCanScrollChannelsDownObserver(checkBoolean(null, mapping.secondary.pageDown, null));
+  tracks.addCanScrollChannelsDownObserver(checkBoolean(null, mapping.secondary.pageDown, m.sceneCanScroll));
   tracks.addCanScrollChannelsUpObserver(checkBoolean(null, mapping.secondary.pageUp, null));
 
   // Track mode observers.

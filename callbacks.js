@@ -24,8 +24,11 @@ function checkBooleanClip(index, note, varToStore) {
  * React to boolean checks by storing values or setting leds.
  */
 function reactBoolean(boolCheck, index, note, varToStore) {
-  if (varToStore != null) {
+  if (varToStore != null && index != null) {
     varToStore[index] = boolCheck;
+  }
+  else if (varToStore != null) {
+    varToStore = boolCheck;
   }
   if (note != null) {
     var state = (boolCheck) ? 'on' : 'off';
