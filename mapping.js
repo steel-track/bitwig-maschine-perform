@@ -11,13 +11,8 @@ var mapping = {
     max: 67
   },
 
-  trackArm: {
+  pads: {
     min: 12,
-    max: 19
-  },
-
-  trackRecord: {
-    min: 20,
     max: 27
   },
 
@@ -47,28 +42,23 @@ var mapping = {
     swing: 26
   },
 
-  modes: {
-    track: 78,
-    macro: 79
-  },
-
   tapTempo: 80,
 
-  clipLength: {
-    min: 84,
-    max: 87,
-    triggers: {
-      8: 84,
-      16: 85,
-      32: 86,
-      64: 87
-    },
-    values: {
-      84: 8,
-      85: 16,
-      86: 32,
-      87: 64
-    }
+  displayModes: {
+    track: 77,
+    parameter: 78,
+    device: 79
+  },
+
+  padModes: {
+    mute: 84,
+    solo: 85,
+    select: 86,
+    duplicate: 87,
+    navigate: 88,
+    keyboard: 89,
+    pattern: 90,
+    scene: 91
   },
   
   /**

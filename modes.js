@@ -1,19 +1,19 @@
 /**
  * Allows the controller to be set into different modes.
  */
-
-function encoderModes(data1, data2) {
+// TODO: deprecate this file.
+function encoders(data1, data2) {
   // Check if our main knob bank was used.
   var main_knob = mapping.knobs.main.indexOf(data1);
   if (main_knob > -1) {
     // Switch based on macro mode.
-    switch (m.mode) {
+    switch (m.topMode) {
       // Macro mode.
-      case mapping.modes.macro:
+      case mapping.topModes.parameter:
         // Change value of macro based on knob index.
-        cDevice.getMacro(main_knob).getAmount().inc(mapping.convertVPot(data2), 128);
+        cDevice.getParameter(main_knob).getAmount().inc(mapping.convertVPot(data2), 128);
         break;
-      case mapping.modes.track:
+      case mapping.topModes.track:
         switch (main_knob) {
           case 0:
             // Volume.
