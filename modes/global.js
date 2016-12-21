@@ -106,9 +106,10 @@ global.processMidi = function (status, data1, data2) {
       case mapping.padModes.navigate:
         navigatePadMode.init();
         break;
-      case mapping.padModes.duplicate:
-        navigatePadMode.init();
-        break;
+//      TODO: figure out how to copy and paste.
+//      case mapping.padModes.duplicate:
+//        duplicatePadMode.init();
+//        break;
       case mapping.padModes.select:
         selectPadMode.init();
         break;

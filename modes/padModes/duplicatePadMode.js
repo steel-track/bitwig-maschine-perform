@@ -19,14 +19,25 @@ duplicatePadMode.processMidi = function(status, data1, data2) {
     }
 
     if (data1 >= mapping.pads.min && data1 <= mapping.pads.max) {
-      var scene = Math.floor((data1 - mapping.pads.min) / 4);
+      var padIndex = data1 - mapping.pads.min;
+      var scene = 0;
+      if (padIndex >= 0 && padIndex < 4) {
+        scene = 3;
+      }
+      else if (padIndex >= 4 && padIndex < 8) {
+        scene = 2;
+      }
+      else if (padIndex >= 8 && padIndex < 12) {
+          scene = 1;
+        }
       var track = (data1 - mapping.pads.min) % 4;
       if (m.banks.tracks.four[track].clipHasContent[scene]) {
-        m.banks.tracks.control.getChannel(track).getClipLauncherSlots().select(scene);
+        println('happened');
+        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
         m.application.control.copy();
       }
       else {
-        m.banks.tracks.control.getChannel(track).getClipLauncherSlots().select(scene);
+        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
         m.application.control.paste();
       }
     }
@@ -45,7 +56,7 @@ duplicatePadMode.flush = function() {
   leds.setSingle(mapping.padModes.duplicate, 'on');
 
   for (var i = 0; i < 4; i++) {
-    for (var j = 0; i < 4; j++) {
+    for (var j = 0; j < 4; j++) {
       if (m.banks.tracks.four[i].clipHasContent[j]) {
         leds.setSingle(mapping.pads.max - (j * 4) + (i - 3), 'on');
       }
