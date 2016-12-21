@@ -26,7 +26,10 @@ var leds = {
    * Set a single led to a state.
    */
   setSingle: function(note, state) {
-    sendNoteOn('0', note, this.stateToMidi(state));
+    if (this.stateChange(note, state)) {
+      this.state[note] = state;
+      sendNoteOn('0', note, this.stateToMidi(state));
+    }
   },
 
   /**
@@ -47,5 +50,14 @@ var leds = {
         midi = '127';
     }
     return midi;
-  }
+  },
+
+  /**
+   * To prevent sending states we've already set, store them here temporarily.
+   */
+  stateChange: function(note, state) {
+    return !(this.state[note] == state);
+  },
+
+  state: {}
 };

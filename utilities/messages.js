@@ -19,8 +19,10 @@ var messages = {
    * Send a message to the maschine display.
    */
   writeMessage: function(text, position) {
-    //println(text);
-    sendSysex(this.start + position + messages.toHex(text) + messages.end);
+    if (this.stateChange(text, position)) {
+      this.state[position] = text;
+      sendSysex(this.start + position + messages.toHex(text) + messages.end);
+    }
   },
 
   writeSingle: function(text, position) {
@@ -68,8 +70,33 @@ var messages = {
   sendVpotLinear: function(index, value) {
     // vpot display for linear starts at 48.
     var channel = 48 + index;
-    sendChannelController(0, channel, value);
-  }
+    if (this.stateChange(value, 'vpot' + channel)) {
+      this.state['vpot' + index] = value;
+      sendChannelController(0, channel, value);
+    }
+  },
+
+  /**
+   * Update the linear vpot with the amount.
+   */
+  sendVpotBipolar: function(index, value) {
+    // vpot display for linear starts at 48.
+    var channel = 48 + index;
+    value = 17 + value;
+    if (this.stateChange(value, 'vpot' + channel)) {
+      this.state['vpot' + index] = value;
+      sendChannelController(0, channel, value);
+    }
+  },
+
+  /**
+   * To prevent sending states we've already set, store them here temporarily.
+   */
+  stateChange: function(text, position) {
+    return !(this.state[position] == text);
+  },
+
+  state: {}
 
 };
 

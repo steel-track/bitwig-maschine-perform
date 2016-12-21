@@ -24,8 +24,7 @@ var mapping = {
     rec: 55,
     restart: 56,
     setClipLength: 57,
-    prevProject: 76,
-    nextProject: 77
+    nextProject: 78
   },
 
   secondary: {
@@ -46,8 +45,8 @@ var mapping = {
 
   displayModes: {
     track: 77,
-    parameter: 78,
-    device: 79
+    trackBank: 79,
+    modules: 76
   },
 
   padModes: {

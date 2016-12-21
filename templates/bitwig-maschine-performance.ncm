@@ -127,12 +127,11 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Keyboard">
-        <disabled />
-        <controller>114</controller>
+        <note>89</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Loop">
@@ -152,12 +151,11 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Navigate">
-        <disabled />
-        <controller>115</controller>
+        <note>88</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Next">
@@ -169,12 +167,11 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Pattern">
-        <disabled />
-        <controller>113</controller>
+        <note>90</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Play">
@@ -218,12 +215,11 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Scene">
-        <disabled />
-        <controller>112</controller>
+        <note>91</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Select">
