@@ -31,15 +31,16 @@ duplicatePadMode.processMidi = function(status, data1, data2) {
           scene = 1;
         }
       var track = (data1 - mapping.pads.min) % 4;
-      if (m.banks.tracks.four[track].clipHasContent[scene]) {
-        println('happened');
-        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
-        m.application.control.copy();
-      }
-      else {
-        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
-        m.application.control.paste();
-      }
+      // Duplicating doesn't work like copy and paste, so for now implement duplicate function.
+//      if (m.banks.tracks.four[track].clipHasContent[scene]) {
+//        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
+//        m.application.control.copy();
+//      }
+//      else {
+//        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().select(scene);
+//        m.application.control.paste();
+//      }
+      m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().duplicateClip(scene);
     }
   }
 };
