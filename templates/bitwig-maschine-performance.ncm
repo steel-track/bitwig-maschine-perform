@@ -1,12 +1,13 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <ni-controller-midi-map version="1">
-  <midi-map type="Maschine" name="bitwig-maschine-performance" port="internal">
-    <handleGroupControls />
+
+  <midi-map name="bitwig-maschine-performance" port="internal" type="Maschine">
+    <handleGroupControls/>
     <velocitycurve>3</velocitycurve>
     <handleTransport>0</handleTransport>
     <wrapmode>0</wrapmode>
     <controls>
-      <button version="1" id="A">
+      <button id="A" version="1">
         <note>60</note>
         <channel>0</channel>
         <off>0</off>
@@ -14,7 +15,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="B">
+      <button id="B" version="1">
         <note>61</note>
         <channel>0</channel>
         <off>0</off>
@@ -22,15 +23,15 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Browse">
+      <button id="Browse" version="1">
         <note>76</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">gate</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="C">
+      <button id="C" version="1">
         <note>62</note>
         <channel>0</channel>
         <off>0</off>
@@ -38,7 +39,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Control">
+      <button id="Control" version="1">
         <note>81</note>
         <channel>0</channel>
         <off>0</off>
@@ -46,7 +47,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="D">
+      <button id="D" version="1">
         <note>63</note>
         <channel>0</channel>
         <off>0</off>
@@ -54,7 +55,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Duplicate">
+      <button id="Duplicate" version="1">
         <note>87</note>
         <channel>0</channel>
         <off>0</off>
@@ -62,7 +63,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="E">
+      <button id="E" version="1">
         <note>64</note>
         <channel>0</channel>
         <off>0</off>
@@ -70,7 +71,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Erase">
+      <button id="Erase" version="1">
         <note>51</note>
         <channel>0</channel>
         <off>0</off>
@@ -78,7 +79,7 @@
         <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="F">
+      <button id="F" version="1">
         <note>65</note>
         <channel>0</channel>
         <off>0</off>
@@ -86,7 +87,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="F1">
+      <button id="F1" version="1">
         <note>78</note>
         <channel>0</channel>
         <off>0</off>
@@ -94,7 +95,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="F2">
+      <button id="F2" version="1">
         <note>79</note>
         <channel>0</channel>
         <off>0</off>
@@ -102,7 +103,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="G">
+      <button id="G" version="1">
         <note>66</note>
         <channel>0</channel>
         <off>0</off>
@@ -110,7 +111,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Grid">
+      <button id="Grid" version="1">
         <note>57</note>
         <channel>0</channel>
         <off>0</off>
@@ -118,7 +119,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="H">
+      <button id="H" version="1">
         <note>67</note>
         <channel>0</channel>
         <off>0</off>
@@ -126,7 +127,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Keyboard">
+      <button id="Keyboard" version="1">
         <note>89</note>
         <channel>0</channel>
         <off>0</off>
@@ -134,7 +135,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Loop">
+      <button id="Loop" version="1">
         <note>56</note>
         <channel>0</channel>
         <off>0</off>
@@ -142,7 +143,7 @@
         <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Mute">
+      <button id="Mute" version="1">
         <note>84</note>
         <channel>0</channel>
         <off>0</off>
@@ -150,7 +151,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Navigate">
+      <button id="Navigate" version="1">
         <note>88</note>
         <channel>0</channel>
         <off>0</off>
@@ -158,7 +159,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Next">
+      <button id="Next" version="1">
         <note>53</note>
         <channel>0</channel>
         <off>0</off>
@@ -166,7 +167,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Pattern">
+      <button id="Pattern" version="1">
         <note>90</note>
         <channel>0</channel>
         <off>0</off>
@@ -174,7 +175,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Play">
+      <button id="Play" version="1">
         <note>54</note>
         <channel>0</channel>
         <off>0</off>
@@ -182,7 +183,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Prev.">
+      <button id="Prev." version="1">
         <note>52</note>
         <channel>0</channel>
         <off>0</off>
@@ -190,7 +191,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Record">
+      <button id="Record" version="1">
         <note>55</note>
         <channel>0</channel>
         <off>0</off>
@@ -198,7 +199,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Repeat">
+      <button id="Repeat" version="1">
         <note>80</note>
         <channel>0</channel>
         <off>0</off>
@@ -206,15 +207,15 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Sample">
+      <button id="Sample" version="1">
         <note>77</note>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">gate</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Scene">
+      <button id="Scene" version="1">
         <note>91</note>
         <channel>0</channel>
         <off>0</off>
@@ -222,7 +223,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Select">
+      <button id="Select" version="1">
         <note>86</note>
         <channel>0</channel>
         <off>0</off>
@@ -230,7 +231,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Solo">
+      <button id="Solo" version="1">
         <note>85</note>
         <channel>0</channel>
         <off>0</off>
@@ -238,7 +239,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <button version="1" id="Step">
+      <button id="Step" version="1">
         <note>82</note>
         <channel>0</channel>
         <off>0</off>
@@ -246,7 +247,7 @@
         <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
-      <knob version="1" id="Swing">
+      <knob id="Swing" version="1">
         <controller mode="offset">26</controller>
         <channel>0</channel>
         <min>0</min>
@@ -256,7 +257,7 @@
         <steps>40</steps>
         <bipolar>off</bipolar>
       </knob>
-      <knob version="1" id="Tempo">
+      <knob id="Tempo" version="1">
         <controller mode="offset">25</controller>
         <channel>0</channel>
         <min>0</min>
@@ -266,7 +267,7 @@
         <steps>100</steps>
         <bipolar>off</bipolar>
       </knob>
-      <knob version="1" id="Volume">
+      <knob id="Volume" version="1">
         <controller mode="offset">24</controller>
         <channel>0</channel>
         <min>0</min>
@@ -280,7 +281,7 @@
     <pages>
       <current_index>0</current_index>
       <page name="DAW">
-        <button version="1" id="Button1">
+        <button id="Button1" version="1">
           <name>1</name>
           <note>68</note>
           <channel>0</channel>
@@ -289,7 +290,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button2">
+        <button id="Button2" version="1">
           <name>2</name>
           <note>69</note>
           <channel>0</channel>
@@ -298,7 +299,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button3">
+        <button id="Button3" version="1">
           <name>3</name>
           <note>70</note>
           <channel>0</channel>
@@ -307,7 +308,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button4">
+        <button id="Button4" version="1">
           <name>4</name>
           <note>71</note>
           <channel>0</channel>
@@ -316,7 +317,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button5">
+        <button id="Button5" version="1">
           <name>5</name>
           <note>72</note>
           <channel>0</channel>
@@ -325,7 +326,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button6">
+        <button id="Button6" version="1">
           <name>6</name>
           <note>73</note>
           <channel>0</channel>
@@ -334,7 +335,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button7">
+        <button id="Button7" version="1">
           <name>7</name>
           <note>74</note>
           <channel>0</channel>
@@ -343,7 +344,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <button version="1" id="Button8">
+        <button id="Button8" version="1">
           <name>8</name>
           <note>75</note>
           <channel>0</channel>
@@ -352,56 +353,56 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </button>
-        <knob version="1" id="Knob1">
+        <knob id="Knob1" version="1">
           <name>1</name>
           <mcu-vpot>16</mcu-vpot>
           <range>360</range>
           <steps>100</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob2">
+        <knob id="Knob2" version="1">
           <name>2</name>
           <mcu-vpot>17</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob3">
+        <knob id="Knob3" version="1">
           <name>3</name>
           <mcu-vpot>18</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob4">
+        <knob id="Knob4" version="1">
           <name>4</name>
           <mcu-vpot>19</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob5">
+        <knob id="Knob5" version="1">
           <name>5</name>
           <mcu-vpot>20</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob6">
+        <knob id="Knob6" version="1">
           <name>6</name>
           <mcu-vpot>21</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob7">
+        <knob id="Knob7" version="1">
           <name>7</name>
           <mcu-vpot>22</mcu-vpot>
           <range>360</range>
           <steps>20</steps>
           <bipolar>off</bipolar>
         </knob>
-        <knob version="1" id="Knob8">
+        <knob id="Knob8" version="1">
           <name>8</name>
           <mcu-vpot>23</mcu-vpot>
           <range>360</range>
@@ -413,7 +414,7 @@
     <groups>
       <current_index>0</current_index>
       <group name="Pad Page A">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>12</note>
           <channel>0</channel>
           <min>0</min>
@@ -422,7 +423,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>21</note>
           <channel>0</channel>
           <min>0</min>
@@ -431,7 +432,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>22</note>
           <channel>0</channel>
           <min>0</min>
@@ -440,7 +441,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>23</note>
           <channel>0</channel>
           <min>0</min>
@@ -449,7 +450,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>24</note>
           <channel>0</channel>
           <min>0</min>
@@ -458,7 +459,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>25</note>
           <channel>0</channel>
           <min>0</min>
@@ -467,7 +468,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>26</note>
           <channel>0</channel>
           <min>0</min>
@@ -476,7 +477,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>27</note>
           <channel>0</channel>
           <min>0</min>
@@ -485,7 +486,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>13</note>
           <channel>0</channel>
           <min>0</min>
@@ -494,7 +495,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>14</note>
           <channel>0</channel>
           <min>0</min>
@@ -503,7 +504,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>15</note>
           <channel>0</channel>
           <min>0</min>
@@ -512,7 +513,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>16</note>
           <channel>0</channel>
           <min>0</min>
@@ -521,7 +522,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>17</note>
           <channel>0</channel>
           <min>0</min>
@@ -530,7 +531,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>18</note>
           <channel>0</channel>
           <min>0</min>
@@ -539,7 +540,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>19</note>
           <channel>0</channel>
           <min>0</min>
@@ -548,7 +549,7 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>20</note>
           <channel>0</channel>
           <min>0</min>
@@ -557,8 +558,8 @@
           <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
-          <disabled />
+        <pad id="Pressure1" subtype="pressure" version="1">
+          <disabled/>
           <polyat>12</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -567,8 +568,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
-          <disabled />
+        <pad id="Pressure10" subtype="pressure" version="1">
+          <disabled/>
           <polyat>21</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -577,8 +578,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
-          <disabled />
+        <pad id="Pressure11" subtype="pressure" version="1">
+          <disabled/>
           <polyat>22</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -587,8 +588,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
-          <disabled />
+        <pad id="Pressure12" subtype="pressure" version="1">
+          <disabled/>
           <polyat>23</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -597,8 +598,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
-          <disabled />
+        <pad id="Pressure13" subtype="pressure" version="1">
+          <disabled/>
           <polyat>24</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -607,8 +608,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
-          <disabled />
+        <pad id="Pressure14" subtype="pressure" version="1">
+          <disabled/>
           <polyat>25</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -617,8 +618,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
-          <disabled />
+        <pad id="Pressure15" subtype="pressure" version="1">
+          <disabled/>
           <polyat>26</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -627,8 +628,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
-          <disabled />
+        <pad id="Pressure16" subtype="pressure" version="1">
+          <disabled/>
           <polyat>27</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -637,8 +638,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
-          <disabled />
+        <pad id="Pressure2" subtype="pressure" version="1">
+          <disabled/>
           <polyat>13</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -647,8 +648,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
-          <disabled />
+        <pad id="Pressure3" subtype="pressure" version="1">
+          <disabled/>
           <polyat>14</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -657,8 +658,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
-          <disabled />
+        <pad id="Pressure4" subtype="pressure" version="1">
+          <disabled/>
           <polyat>15</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -667,8 +668,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
-          <disabled />
+        <pad id="Pressure5" subtype="pressure" version="1">
+          <disabled/>
           <polyat>16</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -677,8 +678,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
-          <disabled />
+        <pad id="Pressure6" subtype="pressure" version="1">
+          <disabled/>
           <polyat>17</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -687,8 +688,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
-          <disabled />
+        <pad id="Pressure7" subtype="pressure" version="1">
+          <disabled/>
           <polyat>18</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -697,8 +698,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
-          <disabled />
+        <pad id="Pressure8" subtype="pressure" version="1">
+          <disabled/>
           <polyat>19</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -707,8 +708,8 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
-          <disabled />
+        <pad id="Pressure9" subtype="pressure" version="1">
+          <disabled/>
           <polyat>20</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -719,7 +720,7 @@
         </pad>
       </group>
       <group name="Pad Page B">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>24</note>
           <channel>0</channel>
           <min>0</min>
@@ -728,7 +729,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>33</note>
           <channel>0</channel>
           <min>0</min>
@@ -737,7 +738,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>34</note>
           <channel>0</channel>
           <min>0</min>
@@ -746,7 +747,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>35</note>
           <channel>0</channel>
           <min>0</min>
@@ -755,7 +756,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>36</note>
           <channel>0</channel>
           <min>0</min>
@@ -764,7 +765,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>37</note>
           <channel>0</channel>
           <min>0</min>
@@ -773,7 +774,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>38</note>
           <channel>0</channel>
           <min>0</min>
@@ -782,7 +783,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>39</note>
           <channel>0</channel>
           <min>0</min>
@@ -791,7 +792,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>25</note>
           <channel>0</channel>
           <min>0</min>
@@ -800,7 +801,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>26</note>
           <channel>0</channel>
           <min>0</min>
@@ -809,7 +810,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>27</note>
           <channel>0</channel>
           <min>0</min>
@@ -818,7 +819,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>28</note>
           <channel>0</channel>
           <min>0</min>
@@ -827,7 +828,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>29</note>
           <channel>0</channel>
           <min>0</min>
@@ -836,7 +837,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>30</note>
           <channel>0</channel>
           <min>0</min>
@@ -845,7 +846,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>31</note>
           <channel>0</channel>
           <min>0</min>
@@ -854,7 +855,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>32</note>
           <channel>0</channel>
           <min>0</min>
@@ -863,7 +864,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>24</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -872,7 +873,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>33</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -881,7 +882,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>34</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -890,7 +891,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>35</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -899,7 +900,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>36</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -908,7 +909,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>37</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -917,7 +918,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>38</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -926,7 +927,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>39</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -935,7 +936,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>25</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -944,7 +945,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>26</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -953,7 +954,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>27</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -962,7 +963,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>28</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -971,7 +972,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>29</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -980,7 +981,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>30</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -989,7 +990,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>31</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -998,7 +999,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>32</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1009,7 +1010,7 @@
         </pad>
       </group>
       <group name="Pad Page C">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>36</note>
           <channel>0</channel>
           <min>0</min>
@@ -1018,7 +1019,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>45</note>
           <channel>0</channel>
           <min>0</min>
@@ -1027,7 +1028,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>46</note>
           <channel>0</channel>
           <min>0</min>
@@ -1036,7 +1037,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>47</note>
           <channel>0</channel>
           <min>0</min>
@@ -1045,7 +1046,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>48</note>
           <channel>0</channel>
           <min>0</min>
@@ -1054,7 +1055,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>49</note>
           <channel>0</channel>
           <min>0</min>
@@ -1063,7 +1064,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>50</note>
           <channel>0</channel>
           <min>0</min>
@@ -1072,7 +1073,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>51</note>
           <channel>0</channel>
           <min>0</min>
@@ -1081,7 +1082,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>37</note>
           <channel>0</channel>
           <min>0</min>
@@ -1090,7 +1091,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>38</note>
           <channel>0</channel>
           <min>0</min>
@@ -1099,7 +1100,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>39</note>
           <channel>0</channel>
           <min>0</min>
@@ -1108,7 +1109,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>40</note>
           <channel>0</channel>
           <min>0</min>
@@ -1117,7 +1118,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>41</note>
           <channel>0</channel>
           <min>0</min>
@@ -1126,7 +1127,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>42</note>
           <channel>0</channel>
           <min>0</min>
@@ -1135,7 +1136,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>43</note>
           <channel>0</channel>
           <min>0</min>
@@ -1144,7 +1145,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>44</note>
           <channel>0</channel>
           <min>0</min>
@@ -1153,7 +1154,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>36</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1162,7 +1163,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>45</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1171,7 +1172,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>46</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1180,7 +1181,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>47</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1189,7 +1190,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>48</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1198,7 +1199,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>49</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1207,7 +1208,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>50</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1216,7 +1217,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>51</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1225,7 +1226,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>37</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1234,7 +1235,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>38</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1243,7 +1244,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>39</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1252,7 +1253,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>40</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1261,7 +1262,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>41</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1270,7 +1271,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>42</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1279,7 +1280,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>43</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1288,7 +1289,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>44</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1299,7 +1300,7 @@
         </pad>
       </group>
       <group name="Pad Page D">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>48</note>
           <channel>0</channel>
           <min>0</min>
@@ -1308,7 +1309,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>57</note>
           <channel>0</channel>
           <min>0</min>
@@ -1317,7 +1318,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>58</note>
           <channel>0</channel>
           <min>0</min>
@@ -1326,7 +1327,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>59</note>
           <channel>0</channel>
           <min>0</min>
@@ -1335,7 +1336,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>60</note>
           <channel>0</channel>
           <min>0</min>
@@ -1344,7 +1345,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>61</note>
           <channel>0</channel>
           <min>0</min>
@@ -1353,7 +1354,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>62</note>
           <channel>0</channel>
           <min>0</min>
@@ -1362,7 +1363,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>63</note>
           <channel>0</channel>
           <min>0</min>
@@ -1371,7 +1372,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>49</note>
           <channel>0</channel>
           <min>0</min>
@@ -1380,7 +1381,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>50</note>
           <channel>0</channel>
           <min>0</min>
@@ -1389,7 +1390,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>51</note>
           <channel>0</channel>
           <min>0</min>
@@ -1398,7 +1399,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>52</note>
           <channel>0</channel>
           <min>0</min>
@@ -1407,7 +1408,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>53</note>
           <channel>0</channel>
           <min>0</min>
@@ -1416,7 +1417,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>54</note>
           <channel>0</channel>
           <min>0</min>
@@ -1425,7 +1426,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>55</note>
           <channel>0</channel>
           <min>0</min>
@@ -1434,7 +1435,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>56</note>
           <channel>0</channel>
           <min>0</min>
@@ -1443,7 +1444,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>48</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1452,7 +1453,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>57</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1461,7 +1462,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>58</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1470,7 +1471,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>59</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1479,7 +1480,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>60</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1488,7 +1489,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>61</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1497,7 +1498,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>62</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1506,7 +1507,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>63</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1515,7 +1516,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>49</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1524,7 +1525,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>50</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1533,7 +1534,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>51</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1542,7 +1543,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>52</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1551,7 +1552,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>53</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1560,7 +1561,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>54</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1569,7 +1570,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>55</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1578,7 +1579,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>56</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1589,7 +1590,7 @@
         </pad>
       </group>
       <group name="Pad Page E">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>60</note>
           <channel>0</channel>
           <min>0</min>
@@ -1598,7 +1599,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>69</note>
           <channel>0</channel>
           <min>0</min>
@@ -1607,7 +1608,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>70</note>
           <channel>0</channel>
           <min>0</min>
@@ -1616,7 +1617,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>71</note>
           <channel>0</channel>
           <min>0</min>
@@ -1625,7 +1626,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>72</note>
           <channel>0</channel>
           <min>0</min>
@@ -1634,7 +1635,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>73</note>
           <channel>0</channel>
           <min>0</min>
@@ -1643,7 +1644,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>74</note>
           <channel>0</channel>
           <min>0</min>
@@ -1652,7 +1653,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>75</note>
           <channel>0</channel>
           <min>0</min>
@@ -1661,7 +1662,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>61</note>
           <channel>0</channel>
           <min>0</min>
@@ -1670,7 +1671,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>62</note>
           <channel>0</channel>
           <min>0</min>
@@ -1679,7 +1680,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>63</note>
           <channel>0</channel>
           <min>0</min>
@@ -1688,7 +1689,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>64</note>
           <channel>0</channel>
           <min>0</min>
@@ -1697,7 +1698,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>65</note>
           <channel>0</channel>
           <min>0</min>
@@ -1706,7 +1707,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>66</note>
           <channel>0</channel>
           <min>0</min>
@@ -1715,7 +1716,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>67</note>
           <channel>0</channel>
           <min>0</min>
@@ -1724,7 +1725,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>68</note>
           <channel>0</channel>
           <min>0</min>
@@ -1733,7 +1734,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>60</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1742,7 +1743,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>69</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1751,7 +1752,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>70</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1760,7 +1761,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>71</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1769,7 +1770,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>72</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1778,7 +1779,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>73</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1787,7 +1788,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>74</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1796,7 +1797,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>75</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1805,7 +1806,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>61</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1814,7 +1815,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>62</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1823,7 +1824,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>63</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1832,7 +1833,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>64</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1841,7 +1842,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>65</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1850,7 +1851,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>66</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1859,7 +1860,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>67</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1868,7 +1869,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>68</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -1879,7 +1880,7 @@
         </pad>
       </group>
       <group name="Pad Page F">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>72</note>
           <channel>0</channel>
           <min>0</min>
@@ -1888,7 +1889,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>81</note>
           <channel>0</channel>
           <min>0</min>
@@ -1897,7 +1898,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>82</note>
           <channel>0</channel>
           <min>0</min>
@@ -1906,7 +1907,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>83</note>
           <channel>0</channel>
           <min>0</min>
@@ -1915,7 +1916,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>84</note>
           <channel>0</channel>
           <min>0</min>
@@ -1924,7 +1925,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>85</note>
           <channel>0</channel>
           <min>0</min>
@@ -1933,7 +1934,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>86</note>
           <channel>0</channel>
           <min>0</min>
@@ -1942,7 +1943,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>87</note>
           <channel>0</channel>
           <min>0</min>
@@ -1951,7 +1952,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>73</note>
           <channel>0</channel>
           <min>0</min>
@@ -1960,7 +1961,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>74</note>
           <channel>0</channel>
           <min>0</min>
@@ -1969,7 +1970,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>75</note>
           <channel>0</channel>
           <min>0</min>
@@ -1978,7 +1979,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>76</note>
           <channel>0</channel>
           <min>0</min>
@@ -1987,7 +1988,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>77</note>
           <channel>0</channel>
           <min>0</min>
@@ -1996,7 +1997,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>78</note>
           <channel>0</channel>
           <min>0</min>
@@ -2005,7 +2006,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>79</note>
           <channel>0</channel>
           <min>0</min>
@@ -2014,7 +2015,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>80</note>
           <channel>0</channel>
           <min>0</min>
@@ -2023,7 +2024,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>72</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2032,7 +2033,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>81</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2041,7 +2042,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>82</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2050,7 +2051,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>83</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2059,7 +2060,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>84</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2068,7 +2069,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>85</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2077,7 +2078,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>86</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2086,7 +2087,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>87</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2095,7 +2096,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>73</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2104,7 +2105,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>74</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2113,7 +2114,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>75</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2122,7 +2123,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>76</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2131,7 +2132,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>77</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2140,7 +2141,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>78</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2149,7 +2150,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>79</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2158,7 +2159,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>80</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2169,7 +2170,7 @@
         </pad>
       </group>
       <group name="Pad Page G">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>84</note>
           <channel>0</channel>
           <min>0</min>
@@ -2178,7 +2179,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>93</note>
           <channel>0</channel>
           <min>0</min>
@@ -2187,7 +2188,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>94</note>
           <channel>0</channel>
           <min>0</min>
@@ -2196,7 +2197,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>95</note>
           <channel>0</channel>
           <min>0</min>
@@ -2205,7 +2206,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>96</note>
           <channel>0</channel>
           <min>0</min>
@@ -2214,7 +2215,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>97</note>
           <channel>0</channel>
           <min>0</min>
@@ -2223,7 +2224,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>98</note>
           <channel>0</channel>
           <min>0</min>
@@ -2232,7 +2233,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>99</note>
           <channel>0</channel>
           <min>0</min>
@@ -2241,7 +2242,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>85</note>
           <channel>0</channel>
           <min>0</min>
@@ -2250,7 +2251,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>86</note>
           <channel>0</channel>
           <min>0</min>
@@ -2259,7 +2260,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>87</note>
           <channel>0</channel>
           <min>0</min>
@@ -2268,7 +2269,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>88</note>
           <channel>0</channel>
           <min>0</min>
@@ -2277,7 +2278,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>89</note>
           <channel>0</channel>
           <min>0</min>
@@ -2286,7 +2287,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>90</note>
           <channel>0</channel>
           <min>0</min>
@@ -2295,7 +2296,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>91</note>
           <channel>0</channel>
           <min>0</min>
@@ -2304,7 +2305,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>92</note>
           <channel>0</channel>
           <min>0</min>
@@ -2313,7 +2314,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>84</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2322,7 +2323,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>93</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2331,7 +2332,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>94</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2340,7 +2341,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>95</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2349,7 +2350,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>96</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2358,7 +2359,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>97</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2367,7 +2368,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>98</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2376,7 +2377,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>99</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2385,7 +2386,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>85</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2394,7 +2395,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>86</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2403,7 +2404,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>87</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2412,7 +2413,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>88</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2421,7 +2422,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>89</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2430,7 +2431,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>90</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2439,7 +2440,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>91</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2448,7 +2449,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>92</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2459,7 +2460,7 @@
         </pad>
       </group>
       <group name="Pad Page H">
-        <pad subtype="trigger" version="1" id="Pad1">
+        <pad id="Pad1" subtype="trigger" version="1">
           <note>96</note>
           <channel>0</channel>
           <min>0</min>
@@ -2468,7 +2469,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad10">
+        <pad id="Pad10" subtype="trigger" version="1">
           <note>105</note>
           <channel>0</channel>
           <min>0</min>
@@ -2477,7 +2478,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad11">
+        <pad id="Pad11" subtype="trigger" version="1">
           <note>106</note>
           <channel>0</channel>
           <min>0</min>
@@ -2486,7 +2487,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad12">
+        <pad id="Pad12" subtype="trigger" version="1">
           <note>107</note>
           <channel>0</channel>
           <min>0</min>
@@ -2495,7 +2496,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad13">
+        <pad id="Pad13" subtype="trigger" version="1">
           <note>108</note>
           <channel>0</channel>
           <min>0</min>
@@ -2504,7 +2505,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad14">
+        <pad id="Pad14" subtype="trigger" version="1">
           <note>109</note>
           <channel>0</channel>
           <min>0</min>
@@ -2513,7 +2514,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad15">
+        <pad id="Pad15" subtype="trigger" version="1">
           <note>110</note>
           <channel>0</channel>
           <min>0</min>
@@ -2522,7 +2523,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad16">
+        <pad id="Pad16" subtype="trigger" version="1">
           <note>111</note>
           <channel>0</channel>
           <min>0</min>
@@ -2531,7 +2532,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad2">
+        <pad id="Pad2" subtype="trigger" version="1">
           <note>97</note>
           <channel>0</channel>
           <min>0</min>
@@ -2540,7 +2541,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad3">
+        <pad id="Pad3" subtype="trigger" version="1">
           <note>98</note>
           <channel>0</channel>
           <min>0</min>
@@ -2549,7 +2550,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad4">
+        <pad id="Pad4" subtype="trigger" version="1">
           <note>99</note>
           <channel>0</channel>
           <min>0</min>
@@ -2558,7 +2559,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad5">
+        <pad id="Pad5" subtype="trigger" version="1">
           <note>100</note>
           <channel>0</channel>
           <min>0</min>
@@ -2567,7 +2568,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad6">
+        <pad id="Pad6" subtype="trigger" version="1">
           <note>101</note>
           <channel>0</channel>
           <min>0</min>
@@ -2576,7 +2577,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad7">
+        <pad id="Pad7" subtype="trigger" version="1">
           <note>102</note>
           <channel>0</channel>
           <min>0</min>
@@ -2585,7 +2586,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad8">
+        <pad id="Pad8" subtype="trigger" version="1">
           <note>103</note>
           <channel>0</channel>
           <min>0</min>
@@ -2594,7 +2595,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="trigger" version="1" id="Pad9">
+        <pad id="Pad9" subtype="trigger" version="1">
           <note>104</note>
           <channel>0</channel>
           <min>0</min>
@@ -2603,7 +2604,7 @@
           <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure1">
+        <pad id="Pressure1" subtype="pressure" version="1">
           <polyat>96</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2612,7 +2613,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure10">
+        <pad id="Pressure10" subtype="pressure" version="1">
           <polyat>105</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2621,7 +2622,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure11">
+        <pad id="Pressure11" subtype="pressure" version="1">
           <polyat>106</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2630,7 +2631,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure12">
+        <pad id="Pressure12" subtype="pressure" version="1">
           <polyat>107</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2639,7 +2640,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure13">
+        <pad id="Pressure13" subtype="pressure" version="1">
           <polyat>108</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2648,7 +2649,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure14">
+        <pad id="Pressure14" subtype="pressure" version="1">
           <polyat>109</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2657,7 +2658,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure15">
+        <pad id="Pressure15" subtype="pressure" version="1">
           <polyat>110</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2666,7 +2667,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure16">
+        <pad id="Pressure16" subtype="pressure" version="1">
           <polyat>111</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2675,7 +2676,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure2">
+        <pad id="Pressure2" subtype="pressure" version="1">
           <polyat>97</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2684,7 +2685,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure3">
+        <pad id="Pressure3" subtype="pressure" version="1">
           <polyat>98</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2693,7 +2694,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure4">
+        <pad id="Pressure4" subtype="pressure" version="1">
           <polyat>99</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2702,7 +2703,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure5">
+        <pad id="Pressure5" subtype="pressure" version="1">
           <polyat>100</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2711,7 +2712,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure6">
+        <pad id="Pressure6" subtype="pressure" version="1">
           <polyat>101</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2720,7 +2721,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure7">
+        <pad id="Pressure7" subtype="pressure" version="1">
           <polyat>102</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2729,7 +2730,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure8">
+        <pad id="Pressure8" subtype="pressure" version="1">
           <polyat>103</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2738,7 +2739,7 @@
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
-        <pad subtype="pressure" version="1" id="Pressure9">
+        <pad id="Pressure9" subtype="pressure" version="1">
           <polyat>104</polyat>
           <channel>0</channel>
           <min>0</min>
@@ -2750,4 +2751,5 @@
       </group>
     </groups>
   </midi-map>
+
 </ni-controller-midi-map>
