@@ -53,6 +53,9 @@ function init() {
   m.midi.control = host.getMidiInPort(0).createNoteInput('Maschine Pads', '?');
   m.midi.control.setShouldConsumeEvents(false);
 
+  // Buffer flushing because with rapid value changes the controller locks up causing jumps in control changes.
+  host.scheduleTask(flushTimerCallback, null, 250);
+
   // Set up banks and other global objects.
   m.application.control = host.createApplication();
   m.transport.control = host.createTransport();
@@ -107,6 +110,7 @@ function init() {
 //    m.banks.devices.current.control.getMacro(i).getAmount().addValueObserver(13, m.set(m.banks.devices.current.macros[i], 'value'));
     m.banks.devices.current.control.getParameter(i).addNameObserver(6, 'none', m.set(m.banks.devices.current.parameters[i], 'name'));
     m.banks.devices.current.control.getParameter(i).addValueObserver(13, m.set(m.banks.devices.current.parameters[i], 'value'));
+    m.banks.devices.current.control.getParameter(i).addValueDisplayObserver(6, 'none', m.set(m.banks.devices.current.parameters[i], 'rawValue'));
   }
 
   for (var i = 0; i < 16; i++) {
@@ -149,11 +153,24 @@ function init() {
   println('Successfully initialized the Maschine.');
 }
 
+function flushTimerCallback() {
+  // If flushing is false, then trigger a flush to ensure the controller is up to date.
+  if (m.flush == false) {
+    modes.flush();
+  }
+  m.flush = true;
+  host.scheduleTask(flushTimerCallback, null, 250);
+}
+
 /**
  * Flush to the external controller after observers register changes.
  */
 function flush() {
-  modes.flush();
+  // To avoid flooding the controller with messages while rapidly changing values, we set a timer to allow flushing.
+  if (m.flush == true) {
+    modes.flush();
+    m.flush = false;
+  }
 }
 
 /**
