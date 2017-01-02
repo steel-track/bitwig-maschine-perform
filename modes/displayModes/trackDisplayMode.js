@@ -128,6 +128,7 @@ trackDisplayMode.flush = function() {
   leds.setSingle(mapping.secondary.pageDown, (m.banks.tracks.eight.canScrollDown) ? 'on' : 'off');
 
   // Send vpot status.
+  messages.sendVpotLinear(0, 0);
   messages.sendVpotLinear(1, m.banks.tracks.current.volume);
   messages.sendVpotBipolar(2, m.banks.tracks.current.pan);
   switch (m.banks.tracks.current.xfade) {

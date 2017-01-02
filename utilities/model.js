@@ -25,6 +25,8 @@ var m = {
     }
   },
 
+  flush: true,
+
   midi: {
     control: null
   },
@@ -53,7 +55,7 @@ var m = {
   },
 
   keyboard: {
-    octave: 4,
+    octave: 3,
     rootNote: 0,
     scaleType: 'chromatic'
   },
@@ -237,35 +239,43 @@ function DeviceModel() {
   this.parameters = {
     0: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     1: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     2: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     3: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     4: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     5: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     6: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     7: {
       name: '',
-        value: 0
+      value: 0,
+      rawValue: ''
     },
     page: 0,
     index: 0,

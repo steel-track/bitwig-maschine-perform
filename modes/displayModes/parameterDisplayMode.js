@@ -95,8 +95,10 @@ parameterDisplayMode.flush = function() {
       leds.setSingle(mapping.secondary.min + i, 'off');
     }
 
-    messages.writeSingle(m.banks.devices.current.parameters.pageNames[i + (m.banks.devices.current.parameters.page * 8)], messages.position.top[i]);
-    messages.writeSingle(m.banks.devices.current.parameters[i].name, messages.position.bottom[i]);
+    // Removing parameter page names in favor of showing values in the display.
+    //messages.writeSingle(m.banks.devices.current.parameters.pageNames[i + (m.banks.devices.current.parameters.page * 8)], messages.position.top[i]);
+    messages.writeSingle(m.banks.devices.current.parameters[i].name, messages.position.top[i]);
+    messages.writeSingle(m.banks.devices.current.parameters[i].rawValue, messages.position.bottom[i]);
     messages.sendVpotLinear(i, m.banks.devices.current.parameters[i].value);
   }
 };
