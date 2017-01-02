@@ -18,6 +18,8 @@ deviceDisplayMode.processMidi = function(status, data1, data2) {
 
     // Switch devices.
     if (data1 >= mapping.secondary.min && data1 <= mapping.secondary.max) {
+      // Set parameter mode after selecting a new device.
+      parameterDisplayMode.init();
       m.banks.devices.eight.control.getDevice(data1 - mapping.secondary.min).selectInEditor();
     }
 
