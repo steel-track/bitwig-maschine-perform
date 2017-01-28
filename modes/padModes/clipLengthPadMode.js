@@ -11,9 +11,11 @@ clipLengthPadMode.init = function(velocity) {
     m.modes.previousPad = m.modes.pad;
     m.setClipLength.isEnabled = true;
     m.modes.pad = clipLengthPadMode;
+    m.transport.control.setLauncherOverdub(false);
   }
   else if (m.setClipLength.isEnabled && velocity > 0) {
     m.setClipLength.isEnabled = false;
+    m.transport.control.setLauncherOverdub(true);
   }
   else if (m.setClipLength.isEnabled && velocity === 0) {
     m.modes.pad = m.modes.previousPad;
