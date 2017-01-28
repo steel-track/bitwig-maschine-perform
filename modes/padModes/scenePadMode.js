@@ -52,7 +52,9 @@ scenePadMode.flush = function() {
     }
   }
   leds.setSingle(mapping.padModes.scene, 'on');
+};
 
+scenePadMode.forceFlush = function() {
   var subDivision = m.transport.position.substr(4, 5);
   var state = 'off';
 

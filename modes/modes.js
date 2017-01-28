@@ -21,6 +21,23 @@ var modes = {
   },
 
   /**
+   * Run all active modes' forceFlush functions if they exist.
+   */
+  forceFlush: function() {
+    if (typeof m.modes.global.forceFlush === 'function') {
+      m.modes.global.forceFlush();
+    }
+
+    if (typeof m.modes.display.forceFlush === 'function') {
+      m.modes.display.forceFlush();
+    }
+
+    if (typeof m.modes.pad.forceFlush === 'function') {
+      m.modes.pad.forceFlush();
+    }
+  },
+
+  /**
    * Run all active modes' midi processing functions.
    */
   processMidi: function(status, data1, data2) {

@@ -171,6 +171,9 @@ function flush() {
     modes.flush();
     m.flush = false;
   }
+
+  // Allow modes to implement a forceFlush method for time sensitive messages like tempo indicators.
+  modes.forceFlush();
 }
 
 /**

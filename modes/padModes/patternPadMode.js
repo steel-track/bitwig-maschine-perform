@@ -67,7 +67,9 @@ patternPadMode.flush = function() {
     }
   }
   leds.setSingle(mapping.padModes.pattern, 'on');
+};
 
+patternPadMode.forceFlush = function() {
   var subDivision = m.transport.position.substr(4, 5);
   var state = 'off';
 

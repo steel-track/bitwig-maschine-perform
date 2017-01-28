@@ -144,15 +144,6 @@ global.processMidi = function (status, data1, data2) {
 
 global.flush = function() {
 
-  // Get subdivision value so we can key off it to blink leds.
-  var subDivision = m.transport.position.substr(4, 5);
-
-  // Blink tap tempo button.
-  if (m.transport.isPlaying) {
-    var state = (subDivision < 3) ? 'on' : 'off';
-    leds.setSingle(mapping.tapTempo, state);
-  }
-
   if (m.transport.isPlaying) {
     leds.setSingle(mapping.nav.start, 'on');
   }
@@ -195,4 +186,15 @@ global.flush = function() {
     }
   }
 
+};
+
+global.forceFlush = function() {
+  // Get subdivision value so we can key off it to blink leds.
+  var subDivision = m.transport.position.substr(4, 5);
+
+  // Blink tap tempo button.
+  if (m.transport.isPlaying) {
+    var state = (subDivision < 3) ? 'on' : 'off';
+    leds.setSingle(mapping.tapTempo, state);
+  }
 };

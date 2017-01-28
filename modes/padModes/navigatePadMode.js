@@ -55,7 +55,9 @@ navigatePadMode.flush = function() {
     }
   }
   leds.setSingle(mapping.padModes.navigate, 'on');
+};
 
+navigatePadMode.forceFlush = function() {
   var subDivision = m.transport.position.substr(4, 5);
   var state = 'off';
 
