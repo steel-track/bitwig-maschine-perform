@@ -35,6 +35,7 @@ host.defineController('Native Instruments', 'Maschine 1 Performance Mode', '1.0'
 host.defineMidiPorts(1, 1);
 host.addDeviceNameBasedDiscoveryPair(['Maschine MK1 Controller'], ['Maschine MK1 Controller']);
 host.addDeviceNameBasedDiscoveryPair(['Maschine MK1 Virtual Input'], ['Maschine MK1 Virtual Output']);
+host.addDeviceNameBasedDiscoveryPair(['Maschine Controller Virtual Input'], ['Maschine Controller Virtual Output']);
 host.addDeviceNameBasedDiscoveryPair(['Maschine MK1 In'], ['Maschine MK1 Out']);
 host.addDeviceNameBasedDiscoveryPair(['Maschine Controller In'], ['Maschine Controller Out']);
 
