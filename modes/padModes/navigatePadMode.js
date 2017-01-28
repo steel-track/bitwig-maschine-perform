@@ -37,10 +37,15 @@ navigatePadMode.processMidi = function(status, data1, data2) {
       // Arm new track.
       m.banks.tracks.lastArmed.control = m.banks.tracks.four.control.getChannel(track);
       m.banks.tracks.lastArmed.control.getArm().set(true);
-      if (m.setClipLength.isEnabled) {
-        m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(scene, m.setClipLength.length * m.transport.beatsPerBar);
+      if (m.banks.tracks.four[track].clipIsPlaying[scene]) {
+        m.banks.tracks.four.control.getChannel(track).getClipLauncherSlots().stop();
       }
-      m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(scene);
+      else {
+        if (m.setClipLength.isEnabled) {
+          m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(scene, m.setClipLength.length * m.transport.beatsPerBar);
+        }
+        m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(scene);
+      }
     }
   }
 };

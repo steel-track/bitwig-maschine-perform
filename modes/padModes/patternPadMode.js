@@ -49,10 +49,15 @@ patternPadMode.processMidi = function(status, data1, data2) {
     if (data1 >= mapping.pads.min && data1 <= mapping.pads.max) {
       // Arm new track.
       m.banks.tracks.lastArmed.control.getArm().set(true);
-      if (m.setClipLength.isEnabled) {
-        m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(data1 - mapping.pads.min, m.setClipLength.length * m.transport.beatsPerBar);
+      if (m.banks.tracks.sixteen[m.banks.tracks.sixteen.channelIndex].clipIsPlaying[data1 - mapping.pads.min]) {
+        m.banks.tracks.lastArmed.control.getClipLauncherSlots().stop();
       }
-      m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(data1 - mapping.pads.min);
+      else {
+        if (m.setClipLength.isEnabled) {
+          m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(data1 - mapping.pads.min, m.setClipLength.length * m.transport.beatsPerBar);
+        }
+        m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(data1 - mapping.pads.min);
+      }
     }
   }
 };

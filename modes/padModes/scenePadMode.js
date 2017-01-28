@@ -34,10 +34,15 @@ scenePadMode.processMidi = function(status, data1, data2) {
       // Arm new track.
       m.banks.tracks.lastArmed.control = m.banks.tracks.sixteen.control.getChannel(data1 - mapping.pads.min);
       m.banks.tracks.lastArmed.control.getArm().set(true);
-      if (m.setClipLength.isEnabled) {
-        m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(m.banks.tracks.sixteen.sceneIndex, m.setClipLength.length * m.transport.beatsPerBar);
+      if (m.banks.tracks.sixteen[i].clipIsPlaying[data1 - mapping.pads.min]) {
+        m.banks.tracks.lastArmed.control.getClipLauncherSlots().stop();
       }
-      m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(m.banks.tracks.sixteen.sceneIndex);
+      else {
+        if (m.setClipLength.isEnabled) {
+          m.banks.tracks.lastArmed.control.getClipLauncherSlots().createEmptyClip(m.banks.tracks.sixteen.sceneIndex, m.setClipLength.length * m.transport.beatsPerBar);
+        }
+        m.banks.tracks.lastArmed.control.getClipLauncherSlots().launch(m.banks.tracks.sixteen.sceneIndex);
+      }
     }
   }
 };
