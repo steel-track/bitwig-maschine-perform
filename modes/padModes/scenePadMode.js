@@ -34,7 +34,7 @@ scenePadMode.processMidi = function(status, data1, data2) {
       // Arm new track.
       m.banks.tracks.lastArmed.control = m.banks.tracks.sixteen.control.getChannel(data1 - mapping.pads.min);
       m.banks.tracks.lastArmed.control.getArm().set(true);
-      if (m.banks.tracks.sixteen[i].clipIsPlaying[data1 - mapping.pads.min]) {
+      if (m.banks.tracks.sixteen[data1 - mapping.pads.min].clipIsPlaying[m.banks.tracks.sixteen.sceneIndex]) {
         m.banks.tracks.lastArmed.control.getClipLauncherSlots().stop();
       }
       else {
