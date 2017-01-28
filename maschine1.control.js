@@ -182,6 +182,9 @@ function flush() {
  * Perform cleanup and turn off all leds.
  */
 function exit() {
+  // Ensure flushing is allowed.
+  m.flush = true;
+
   // Clear the display with a goodbye message.
   messages.writeMessage(messages.fixLength('Goodbye!', 128), messages.position.lineTop);
   messages.writeMessage(messages.fixLength('See you soon :)', 128), messages.position.lineBottom);
