@@ -33,7 +33,6 @@ trackDisplayMode.processMidi = function(status, data1, data2) {
     // Switch tracks if notes fall within secondary range.
     if (data1 >= mapping.secondary.min && data1 <= mapping.secondary.max) {
       m.banks.tracks.eight.control.getChannel(data1 - mapping.secondary.min).selectInMixer();
-      m.banks.tracks.eight.control.getChannel(data1 - mapping.secondary.min).getPrimaryDevice().selectInEditor();
 
       // Make sure our xfade tracking value is updated if the channel changes.
       switch (m.banks.tracks.current.xfade) {
